@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+      }
+
+      .stunning-logo {
+        width: 100px;
+        height: 40px;
+      }
+
+      .menus {
+        display: flex;
+        gap: 50px;
+      }
+
+      .your-account {
+        border-radius: 25px;
+        background-color: #ffd8db;
+        color: #a389cc;
+        font-size: 14px;
+        padding: 4px 25px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .content-box {
+        margin-left: 120px;
+      }
+
+      .landing-image {
+        height: 450px;
+        width: 550px;
+        margin: 40px 100px 0 0;
+      }
+
+      .new-account-box {
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        align-items: center;
+      }
+      .new-account {
+        border-radius: 25px;
+        background-color: #5243c0;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 0 20px;
+      }
+
+      .card {
+        width: 20px;
+        height: 10px;
+        border-radius: 15px;
+        margin-right: 20px;
+      }
+
+      .table {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 10px;
+        border-radius: 15px;
+        padding-left: 20px;
+        background-color: whitesmoke;
+      }
+
+      .text {
+        width: 150px;
+        font-size: 13px;
+      }
+
+      .menus :hover {
+        text-decoration: underline 3px #8071d0;
+      }
+
+      .image-container {
+        width: 50px;
+        height: 50px;
+        background-image: url("/tick-gray.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .table:hover > div {
+        background-image: url("/tick-blue.png");
+      }
+
+      .table:hover {
+        background-color: #ffffff;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="stun">
+        <img src="/stunning-logo.png" class="stunning-logo" />
+      </div>
+      <div class="menus">
+        <p>Home</p>
+        <p>About</p>
+        <p>Blog</p>
+        <p>Jobs</p>
+      </div>
+      <div class="your-account"><p>Your Account</p></div>
+    </div>
+
+    <div class="main">
+      <div class="content-box">
+        <h1 style="font-weight: 700; font-size: 50px">
+          Stunning <br />Workplace
+        </h1>
+        <p style="line-height: 25px; font-size: 14px">
+          With Stunning, remote teams can organize projects,<br />
+          manage shifting priorities, and get work done.
+        </p>
+        <div class="new-account-box">
+          <div class="new-account"><p>New Account</p></div>
+          <div><img src="/arrow-up.png" /></div>
+          <div><img src="/arrow-down.png" /></div>
+        </div>
+
+        <div class="table-container" style="margin-top: 40px">
+          <div class="table">
+            <div class="image-container"></div>
+            <p class="text">Dmm design</p>
+            <img src="/user-pink.png" />
+            <p>20 dec</p>
+            <p class="card" style="background-color: #fed7da"></p>
+          </div>
+
+          <div class="table">
+            <div class="image-container"></div>
+            <p class="text">Blurr animation</p>
+            <img src="/user-orange.png" />
+            <p>22 dec</p>
+            <p class="card" style="background-color: #fd6534"></p>
+          </div>
+
+          <div class="table">
+            <div class="image-container"></div>
+            <p class="text">Illustration</p>
+            <img src="/user-blue.png" />
+            <p>26 dec</p>
+            <p class="card" style="background-color: #9ed095"></p>
+          </div>
+
+          <div class="table">
+            <div class="image-container"></div>
+            <p class="text">Refunds</p>
+            <img src="/user-red.png" />
+            <p>28 dec</p>
+            <p class="card" style="background-color: #ffe4a0"></p>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img
+          src="/landing-section-image.png"
+          class="landing-image"
+        />
+      </div>
+    </div>
+  </body>
+</html>
